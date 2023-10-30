@@ -109,7 +109,7 @@ public class Signup  extends JFrame implements ActionListener {
         m1.setFont(new Font("Raleway",Font.BOLD,14));
         add(m1);
 
-        m2=new JRadioButton("Numarried");
+        m2=new JRadioButton("Unmarried");
         m2.setBounds(450,440,100,30);
         m2.setFont(new Font("Raleway",Font.BOLD,14));
         add(m2);
@@ -185,6 +185,44 @@ public class Signup  extends JFrame implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
+        String formNo = first;
+        String name=textName.getText();
+        String fatherName = textFName.getText();
+        String dob = ((JTextField)dateChooser.getDateEditor().getUiComponent()).getText();
+        String gender = null;
+        if (r1.isSelected()){
+            gender="Male";
+
+        } else if (r2.isSelected()) {
+            gender="Female";
+        }
+        String email = textEmail.getText();
+        String matial = null;
+        if (m1.isSelected()){
+            matial="Married";
+        } else if (m2.isSelected()) {
+            matial="Unmarried";
+        } else if (m2.isSelected()) {
+            matial="Others";
+        }
+        String address = textAdd.getText();
+        String city = textcity.getText();
+        String pincode = textPin.getText();
+        String state = textstate.getText();
+
+        try {
+            if (textName.getText().equals("")){
+                JOptionPane.showMessageDialog(null,"Fill all the Filds");
+            }else {
+                Con con1 = new Con();
+                String q = "insert into signup values('"+formNo+"','"+name+"','"+fatherName+"','"+dob+"','"+gender+"','"+email+"','"+matial+"','"+address+"','"+city+"','"+pincode+"','"+state+"')";
+                 con1.statement.executeUpdate(q);
+                 new Signup2();
+                 setVisible(false);
+            }
+        }catch (Exception E){
+            E.printStackTrace();
+        }
 
     }
 
