@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1f2d1beb-0268-4f24-8d26-d7e975b01c94" name="Changes" comment="update">
-      <change afterPath="$PROJECT_DIR$/src/Bank_Management_System/Signup2.java" afterDir="false" />
+    <list default="true" id="1f2d1beb-0268-4f24-8d26-d7e975b01c94" name="Changes" comment="ok">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank Management System.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Bank Management System.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bank_Management_System/Signup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bank_Management_System/Signup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bank_Management_System/Signup2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bank_Management_System/Signup2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +48,20 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Signup">
+  <component name="RunManager" selected="Application.Con">
+    <configuration name="Con" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Bank_Management_System.Con" />
+      <module name="Bank Management System" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Bank_Management_System.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Login" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Bank_Management_System.Login" />
       <module name="Bank Management System" />
@@ -79,6 +90,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Con" />
         <item itemvalue="Application.Signup" />
         <item itemvalue="Application.Login" />
       </list>
@@ -149,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698653441841</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="update">
+      <created>1698659134844</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1698659134844</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
